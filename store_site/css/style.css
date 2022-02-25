@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.mainVisu {
+  background-image: url(../img/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+}
+
+.logoSvg {
+  float: right;
+  margin: 30px 30px 0 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#magazine {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.magTitle {
+  margin: 0 auto;
+}
+
+.magTitle h2 {
+  font-size: 24px;
+}
+
+.magTitle p {
+  margin: 30px auto;
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#magazine img {
+width: 100%;
+}
+
+.magItem {
+  width: 48%;
+  position: relative;
+}
+
+.textBox {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  max-width: 270px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(30, 30, 30, 0.6);
+  color: #fff;
+  line-height: 125%;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.textBox p {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.fashionVisu {
+  background-image: url(../img/fashion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 600px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fashionVisu h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.fashionVisu p {
+  font-size: 14px;
+  line-height: 150%;
+  width: 620px;
+  margin: 0 auto;
+}
+
+.fashionVisu a {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  border: solid 1px;
+  padding: 15px 35px;
+  margin-top: 30px;
+}
+
+#catalog, #antique {
+  padding: 70px 0;
+  background-color: rgba(230, 230, 230, 0.6);
+}
+
+.catalogImg, .antiqueImg {
+  width: 48%;
+}
+
+.catalogImg img, .antiqueImg img {
+  width: 100%;
+  height: auto;
+}
+
+.catalogText, .antiqueText {
+  width: 48%;
+  text-align: center;
+  margin: auto 0;
+}
+
+.catalogText h2,.antiqueText h2 {
+  font-size: 24px;
+}
+
+.catalogText p, .antiqueText p {
+  text-align: left;
+  font-size: 13px;
+  margin-top: 30px;
+  line-height: 150%;
+}
+
+.antiqueText a {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  border: solid 1px;
+  padding: 15px 35px;
+}
+
+.footerBg {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  width: 30%;
+  margin: auto 0;
+}
+
+.footerMenu {
+  width: 30%;
+}
+
+.footerMenu h3 {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.footerMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerMenu li {
+  font-size: 12px;
+  line-height: 200%
+}
+
+.footerMenu li::before {
+  content: "";
+  width: 4px;
+  height: 1px;
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  top: -4px;
+  margin-right: 5px;
+}
+
+.footerMenu p {
+  font-size: 12px;
+  line-height: 200%
+}
+
+#copy {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 896px) {
+  .flexBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .magItem {
+    width: 100%;
+  }
+
+  .magItem:first-child {
+    margin-bottom: 30px;
+  }
+
+  #catalog, #antique {
+    padding: 30px 0;
+  }
+
+  .catalogImg, .antiqueImg {
+    width: 100%;
+  }
+
+  .catalogImg {
+    margin-bottom: 60px;
+  }
+
+  .antiqueImg {
+    padding-top: 60px;
+  }
+
+  .catalogText, .antiqueText {
+    width: 100%;
+  }
+
+  .footerBg {
+    padding: 30px 0;
+  }
+
+  .footerLogo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footerMenu {
+    width: 100%;
+  }
+
+  .footerMenu:last-child {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+
+}
