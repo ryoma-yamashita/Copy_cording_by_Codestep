@@ -1,0 +1,120 @@
+html {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#header a {
+  display: block;
+}
+#header a:hover {
+  opacity: 0.6;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.navi {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+}
+
+.navMenu {
+  color: #fff;
+}
+
+.hamburger {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 13px;
+  height: 2px;
+  background-color: #000;
+}
+.hamburger span:nth-of-type(1) {
+  top: 22px;
+  width: 60%;
+}
+.hamburger span:nth-of-type(2) {
+  top: 29px;
+  width: 60%;
+}
+
+#mask {
+  display: none;
+}
+
+.productList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productList li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+.productList p {
+  font-size: 0.75rem;
+}
+
+.viewMore {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.viewMore:hover {
+  opacity: 0.7;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+#footer p {
+  font-size: 0.25rem;
+}
+
+.snsMenu {
+  display: flex;
+}
+.snsMenu li {
+  margin-right: 30px;
+  font-size: 0.75rem;
+}
