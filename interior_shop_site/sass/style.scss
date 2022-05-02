@@ -4,6 +4,11 @@ html {
   font-size: 100%;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
 img {
   max-width: 100%;
 }
@@ -20,22 +25,28 @@ li {
 // header
 
 #header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
   a {
     display: block;
+
     &:hover {
       opacity: 0.6;
     }
   }
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-
 .wrapper {
+  width: 100%;
   max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
@@ -61,6 +72,7 @@ li {
   width: 50px;
   height: 50px;
   cursor: pointer;
+
   span {
     display: inline-block;
     transition: all .4s;
@@ -68,10 +80,12 @@ li {
     left: 13px;
     height: 2px;
     background-color: #000;
+
     &:nth-of-type(1) {
       top: 22px;
       width: 60%;
     }
+
     &:nth-of-type(2) {
       top: 29px;
       width: 60%;
@@ -83,7 +97,18 @@ li {
   display: none;
 }
 
-// top
+// top&products
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.pageTitle {
+  font-weight: 100;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
 .productList {
   display: flex;
   justify-content: space-between;
@@ -103,7 +128,8 @@ li {
   display: block;
   text-align: center;
   font-size: 0.9rem;
-  &:hover{
+
+  &:hover {
     opacity: 0.7;
   }
 }
@@ -112,8 +138,11 @@ li {
 #footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+
   p {
     font-size: 0.25rem;
   }
@@ -121,8 +150,69 @@ li {
 
 .snsMenu {
   display: flex;
+
   li {
     margin-right: 30px;
     font-size: 0.75rem;
   }
+}
+
+// products
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  li {
+    font-size: 0.9rem;
+    margin: 0 20px;
+  }
+}
+
+// item
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.productTitle {
+  font-weight: 100;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.productDetale {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.productImg {
+  width: 50%;
+}
+
+.productText {
+  width: 42%;
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+  }
+  dt {
+    width: 30%;
+  }
+  dd {
+    width: 70%;
+  }
+}
+
+.backToProducts {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
 }
