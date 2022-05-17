@@ -1,5 +1,6 @@
-// $(function () {
-  $('.hamburger').on('click', function () {
-    $(this).toggleClass('active');
+$(function() {
+  $('.hamburger').on('click', function() {
+    // console.log('ok');
+    $('#header').toggleClass('active');
   });
-// });
+});
