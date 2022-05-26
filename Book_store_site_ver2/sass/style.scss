@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+html {
+  font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+}
+
+body {
+  font-size: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+// header
+#topVisu {
+  background-image: url(../img/mainvisual-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+}
+
+.logo {
+  width: 7%;
+  float: right;
+  margin: 30px 30px 0 0;
+}
+
+// magazine
+.wrapper {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+#magazine {
+  margin-top: 80px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sectionText {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.archiveImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/magazine-archive-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  width: 49%;
+  height: 480px;
+}
+
+.newImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/magazine-new-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 49%;
+  height: 480px;
+}
+
+.textBox {
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  color: #fff;
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.85rem;
+    font-weight: 900;
+  }
+}
+
+// fashion
+#fashion {
+  margin-top: 80px;
+  background-image: url(../img/fashion-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 800px;
+}
