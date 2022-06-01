@@ -9,14 +9,14 @@ gulp.task('default', function () {
     // style.scssの更新があった場合の処理
     // style.scssファイルを取得
     return gulp.src('sass/style.scss')
-    // Sassのコンパイルを実行
-    .pipe(sass({
-      outputStyle: 'expanded'
-    })
-    // Sassのコンパイルエラーを表示
-    // (これがないと自動的に止まってしまう)
-    .on('error', sass.logError))
-    // cssフォルダー以下に保存
-    .pipe(gulp.dest('css'));
+      // Sassのコンパイルを実行
+      .pipe(sass({
+        outputStyle: 'expanded'
+      })
+        // Sassのコンパイルエラーを表示
+        // (これがないと自動的に止まってしまう)
+        .on('error', sass.logError))
+      // cssフォルダー以下に保存
+      .pipe(gulp.dest('css'));
   });
 });
