@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -16,162 +16,181 @@
 
 <body>
   <header>
-    <h1>
-      <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-    </h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">私たちについて</a>
-        </li>
-        <li>
-          <a href="#">サービス</a>
-        </li>
-        <li>
-          <a href="#">商品情報</a>
-        </li>
-        <li>
-          <a href="#">展示会</a>
-        </li>
-        <li>
-          <a href="#">暮らしの日記</a>
-        </li>
-        <li>
-          <a href="#">会社概要</a>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://twitter.com/">Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/">facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/">instagram</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+      </h1>
+      <nav class="siteNavi">
+        <ul>
+          <li>
+            <a href="#">私たちについて</a>
+          </li>
+          <li>
+            <a href="#">サービス</a>
+          </li>
+          <li>
+            <a href="#">商品情報</a>
+          </li>
+          <li>
+            <a href="#">展示会</a>
+          </li>
+          <li>
+            <a href="#">暮らしの日記</a>
+          </li>
+          <li>
+            <a href="#">会社概要</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="snsNavi">
+        <ul>
+          <li>
+            <a href="https://twitter.com/">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">instagram</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hamberger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+    </div>
   </header>
 
   <main>
-    <div>
+    <div class="wrapper">
       <section id="video">
-        <video src="video/house_video.mp4"></video>
+        <div class="video">
+          <video class="bgVideo" autoplay loop muted playsinline src="video/house_video.mp4"></video>
+        </div>
       </section>
 
       <section id="project">
-        <h2>建築事例をご紹介</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img/project1-unsplash.jpg" alt="project1">
-              PROJECT_01
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/project2-unsplash.jpg" alt="project2">
-              PROJECT_02
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/project3-unsplash.jpg" alt="project3">
-              PROJECT_03
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/project4-unsplash.jpg" alt="project4">
-              PROJECT_04
-            </a>
-          </li>
-        </ul>
+        <div class="inner">
+          <h2 class="secTitle">建築事例をご紹介</h2>
+          <ul class="projectImg">
+            <li>
+              <a href="#">
+                <img src="img/project1-unsplash.jpg" alt="project1">
+                <p>PROJECT_01</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/project2-unsplash.jpg" alt="project2">
+                <p>PROJECT_02</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/project3-unsplash.jpg" alt="project3">
+                <p>PROJECT_03</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/project4-unsplash.jpg" alt="project4">
+                <p>PROJECT_04</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>明るいHOUSEの特徴</h2>
-        <ul>
-          <li>
-            <a href="#">design</a>
-            <p>デザイン</p>
-            <p>テキストテキストテキスト</p>
-          </li>
-          <li>
-            <a href="#">quality</a>
-            <p>性能</p>
-            <p>テキストテキストテキスト</p>
-          </li>
-          <li>
-            <a href="#">suppport</a>
-            <p>サポート</p>
-            <p>テキストテキストテキスト</p>
-          </li>
-        </ul>
+      <section id="feature">
+        <div class="inner">
+          <h2 class="secTitle">明るいHOUSEの特徴</h2>
+          <ul class="list">
+            <li>
+              <a href="#">design</a>
+              <p class="title">デザイン</p>
+              <p>テキストテキストテキスト</p>
+            </li>
+            <li>
+              <a href="#">quality</a>
+              <p class="title">性能</p>
+              <p>テキストテキストテキスト</p>
+            </li>
+            <li>
+              <a href="#">suppport</a>
+              <p class="title">サポート</p>
+              <p>テキストテキストテキスト</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="flow">
-        <h2>家ができるまでの流れ</h2>
-        <p>
-          お問い合わせをいただいてから、家が完成するまでの流れです。
-        </p>
-        <div>
-          <ol>
-            <li>1.ヒアリング</li>
-            <li>2.プラン提案</li>
-            <li>3.契約</li>
-            <li>4.着工</li>
-            <li>5.完成</li>
-          </ol>
-          <dl>
-            <dt>
-              <span>1</span>
-              ヒアリング
-            </dt>
-            <dd>
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-            </dd>
-            <dt>
-              <span>2</span>
-              プラン提案
-            </dt>
-            <dd>
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-            </dd>
-            <dt>
-              <span>3</span>
-              契約
-            </dt>
-            <dd>
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-            </dd>
-            <dt>
-              <span>4</span>
-              着工
-            </dt>
-            <dd>
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-            </dd>
-            <dt>
-              <span>5</span>
-              完成
-            </dt>
-            <dd>
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキストテキストテキスト
-            </dd>
-          </dl>
+        <div class="inner">
+          <h2>家ができるまでの流れ</h2>
+          <p>
+            お問い合わせをいただいてから、家が完成するまでの流れです。
+          </p>
+          <div>
+            <ol>
+              <li>1.ヒアリング</li>
+              <li>2.プラン提案</li>
+              <li>3.契約</li>
+              <li>4.着工</li>
+              <li>5.完成</li>
+            </ol>
+            <dl>
+              <dt>
+                <span>1</span>
+                ヒアリング
+              </dt>
+              <dd>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </dd>
+              <dt>
+                <span>2</span>
+                プラン提案
+              </dt>
+              <dd>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </dd>
+              <dt>
+                <span>3</span>
+                契約
+              </dt>
+              <dd>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </dd>
+              <dt>
+                <span>4</span>
+                着工
+              </dt>
+              <dd>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </dd>
+              <dt>
+                <span>5</span>
+                完成
+              </dt>
+              <dd>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </dd>
+            </dl>
+          </div>
         </div>
       </section>
 
       <section id="contact">
+        <div class="inner">
         <div>
           <h2>お問い合わせ</h2>
           <p>
@@ -192,8 +211,10 @@
             </a>
           </div>
         </div>
+        </div>
       </section>
 
+    </div>
     </div>
   </main>
 
