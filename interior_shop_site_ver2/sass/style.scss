@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+// header
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.site-title {
+  a {
+    width: 180px;
+    line-height: 1px;
+    display: block;
+  }
+}
+
+#navi {
+  width: 300px;
+  padding: 36px 50px;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  opacity: 0;
+  overflow-y: auto;
+  transition: all 0.5s;
+  z-index: 20;
+
+  .site-navi li {
+    margin-bottom: 15px;
+    font-size: 0.875rem;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.active #navi {
+  left: 0;
+  opacity: 1;
+}
+
+#toggle-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 20;
+
+  span {
+    display: block;
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 10%;
+    background-color: #333;
+
+    &:nth-child(1) {
+      top: 10px;
+    }
+
+    &:nth-child(2) {
+      bottom: 10px;
+    }
+  }
+}
+
+.active {
+  #toggle-btn {
+    span {
+      background-color: #fff;
+      &:nth-child(1) {
+        transform: translateY(4px) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        transform: translateY(-4px) rotate(45deg);
+      }
+    }
+  }
+}
+
+#mask {
+  display: none;
+  transition: all 0.5s;
+}
+
+.active {
+  #mask {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+  }
+}
+
+// top
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    position: relative;
+    width: 23%;
+    margin-bottom: 40px;
+    img {
+      margin-bottom: 10px;
+      vertical-align: top;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.link-text {
+  display: block;
+  text-align: center;
+}
+
+// footer
+#footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+}
+
+#sns-navi {
+  display: flex;
+  li {
+    font-size: 0.75rem;
+    margin-right: 30px;
+  }
+}
+
+.copyright {
+  font-size: 0.6rem;
+}
