@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
   color: #333;
 }
@@ -30,6 +30,17 @@ a:hover {
   max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.page-title {
+  font-size: 0.875rem;
+  font-weight: 100;
+  margin-bottom: 30px;
 }
 
 #header {
@@ -152,6 +163,7 @@ a:hover {
 .link-text {
   display: block;
   text-align: center;
+  font-size: 0.875rem;
 }
 
 #footer {
@@ -173,4 +185,42 @@ a:hover {
 
 .copyright {
   font-size: 0.6rem;
+}
+
+.pagenation {
+  display: flex;
+  justify-content: center;
+}
+.pagenation li {
+  margin: 0 20px;
+  font-size: 0.875rem;
+}
+
+#item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#item .item-img {
+  width: 50%;
+}
+#item .item-text {
+  width: 42%;
+}
+#item .item-text p {
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+#item .item-difinition-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+#item .item-difinition-list dt {
+  width: 30%;
+}
+#item .item-difinition-list dd {
+  width: 70%;
 }

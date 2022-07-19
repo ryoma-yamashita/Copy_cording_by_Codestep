@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header" class="wrapper">
     <h1 class="site-title">
       <a href="index.html" class="logo">
         <img src="img/logo.svg" alt="Furniture Design">
@@ -45,40 +45,43 @@
   </header>
 
   <main>
-    <div id="item" class="container wrapper">
+    <div class="container wrapper">
+
       <h1 class="page-title">
         プロダクトタイトル
       </h1>
 
-      <div>
-        <img src="img/item1-unsplash.jpg" alt="item1-img">
+      <div id="item">
+        <div class="item-img">
+          <img src="img/item1-unsplash.jpg" alt="item1-img">
+        </div>
+        <div class="item-text">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <p>&yen;99,999 +tax</p>
+          <dl class="item-difinition-list">
+            <dt>SIZE：</dt>
+            <dd>W999 &times; D999 &times; H999</dd>
+            <dt>COLOR：</dt>
+            <dd>テキスト</dd>
+            <dt>MATERIAL：</dt>
+            <dd>テキストテキストテキスト</dd>
+          </dl>
+        </div>
       </div>
-      <div>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-        <p>&yen;99,999 +tax</p>
-        <dl>
-          <dt>SIZE:</dt>
-          <dd>W999 x D999 x H999</dd>
-          <dt>COLOR:</dt>
-          <dd>テキスト</dd>
-          <dt>MATERIAL:</dt>
-          <dd>テキストテキストテキスト</dd>
-        </dl>
-      </div>
-      <a href="products.html">Back To Products</a>
+      <a class="link-text" href="products.html">Back To Products</a>
     </div>
   </main>
 
-  <footer id="footer">
+  <footer id="footer" class="wrapper">
     <ul id="sns-navi">
       <li>
         <a href="https://www.instagram.com/">INSTAGRAM</a>
