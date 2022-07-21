@@ -148,7 +148,6 @@ a:hover {
   flex-wrap: wrap;
 }
 .product-list li {
-  position: relative;
   width: 23%;
   margin-bottom: 40px;
 }
@@ -223,4 +222,94 @@ a:hover {
 }
 #item .item-difinition-list dd {
   width: 70%;
+}
+
+#about {
+  max-width: 600px;
+  text-align: left;
+}
+#about p {
+  font-size: 0.875rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+#company {
+  max-width: 600px;
+  text-align: left;
+}
+
+.overview-list {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.overview-list dt {
+  width: 30%;
+  padding: 20px 10px;
+  border-bottom: #ddd 1px solid;
+}
+.overview-list dt:last-of-type {
+  border-bottom: none;
+}
+.overview-list dd {
+  width: 70%;
+  padding: 20px 10px;
+  border-bottom: #ddd 1px solid;
+}
+.overview-list dd:last-child {
+  border-bottom: none;
+}
+
+.map iframe {
+  filter: grayscale(1);
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-list li {
+    width: 47%;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #sns-navi {
+    margin-bottom: 5px;
+  }
+
+  #item {
+    flex-direction: column;
+  }
+  #item .item-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #item .item-text {
+    width: 100%;
+  }
+
+  #company {
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .overview-list {
+    flex-direction: column;
+    text-align: left;
+  }
+  .overview-list dt {
+    width: 100%;
+    padding: 20px 10px 0px;
+    border-bottom: none;
+  }
+  .overview-list dd {
+    width: 100%;
+    padding: 10px 10px 20px;
+    border-bottom: #ddd 1px solid;
+  }
 }
