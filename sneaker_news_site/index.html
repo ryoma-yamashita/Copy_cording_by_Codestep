@@ -8,20 +8,23 @@
   <title>Sneakers</title>
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
-  <header>
-    <h1>
+  <header id="header">
+    <h1 class="site-title">
       <a href="index.html">
         <img src="img/logo.svg" alt="Sneakers">
       </a>
     </h1>
 
-    <nav>
-      <ul>
+    <nav class="nav-menu">
+      <ul class="site-nav">
         <li>
           <a href="#pickuo">PICK UP</a>
         </li>
@@ -32,7 +35,7 @@
           <a href="#contact">CONTACT</a>
         </li>
       </ul>
-      <ul>
+      <ul class="nav-sns">
         <li>
           <a href="https://twitter.com/">Twitter</a>
         </li>
@@ -233,15 +236,21 @@
         </div>
         <div class="contact-form">
           <dl>
-            <dt>Name:</dt>
+            <dt>
+              <label for="name">Name:</label>
+            </dt>
             <dd>
               <input type="text" id="your-name">
             </dd>
-            <dt>Mail:</dt>
+            <dt>
+            <label for="e-mail">Mail:</label>
+            </dt>
             <dd>
               <input type="text" id="your-mail">
             </dd>
-            <dt>Message:</dt>
+            <dt>
+              <label for="message">Message:</label>
+            </dt>
             <dd>
               <textarea name="message" id="message" cols="30" rows="2"></textarea>
             </dd>
